@@ -197,3 +197,7 @@ Web Security
 * How does SAML work?
 
 * Your login process requires a password. Talk about the UI decisions around this. What tradeoffs do you make between password complexity requirements and usability? How do you design the user feedback for repeatedly entered wrong passwords?
+
+*What is SSL and why is it not enough when it comes to encryption?
+
+SSL is identity verification, not hard data encryption. It is designed to be able to prove that the person you are talking to on the other end is who they say they are. SSL and its big brother TLS are both used almost everyone online, but the problem is because of this it is a huge target and is mainly attacked via its implementation (The Heartbleed bug for example) and its known methodology. As a result, SSL can be stripped in certain circumstances, so additional protections for data-in-transit and data-at-rest are very good ideas.
